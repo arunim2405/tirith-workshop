@@ -1,12 +1,9 @@
 # Tirith Workshop
 
-July 8th 2024
 
-Time: 1 - 2 hours
 
 ## Outline
 
--   Introduction to Tirith
 -   Creating your first policy
 -   Use Case: Guardrailing Terraform deployment
 -   Use Case: Guardrailing cloud cost
@@ -17,36 +14,6 @@ Time: 1 - 2 hours
 -   Be able to understand and advocate for Tirith
 -   Be able to contribute to Tirith Roadmap
 
-## Introduction to Tirith
-
-Time: 15 minutes
-
-In this section, you will learn about:
-
--   What Tirith is about
--   Why are we doing Tirith
--   Philosophy of Tirith
-
-### What is Tirith?
-
--   Tirith scans declarative Infrastructure as Code (IaC) configurations like Terraform against policies defined using JSON.
--   Tirith is a **declarative** policy engine, not imperative. So it is decoupled.
--   Currently, the focus is more to be a **proactive** policy evaluator than **reactive**.
--   It is a CLI-based program, but can also be used as a Python library
-
-### Why are we doing Tirith?
--   Writing Policy as Code is not easy and requires a steep learning curve
--   Expensive to maintain policies in IaC Logic
-    -   (We can write very basic validations inside Terraform)
--   Even with current engines there are still manual approvals needed
-    ending up in ticketing systems
--   Hardcoded IaC, you need several code bases
--   Policies are not going beyond resources configuration! Why not going
-    to cost or even CI/CD definitions?
-
-Imagine that in an organisation, you have a lot of IaC codebases and you want
-to ensure that every **aws_lambda_function** inside the codebase has
-memory set to 128 or even lower than 128. With one same Tirith policy, we can do evaluations on any IaC codebases.
 
 ### Philosophy of Tirith
 
